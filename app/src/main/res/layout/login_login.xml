@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/branco1"
+    tools:context=".view.login.Login">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/imgLogo"
+        app:srcCompat="@drawable/img_logo" />
+
+    <TextView
+        android:id="@+id/txtEducapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogo"
+        android:layout_centerInParent="true"
+        android:text="@string/educapp"
+        android:textColor="@color/rosa"
+        android:textSize="@dimen/fonte_educapp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/btnFacebook"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/txtEducapp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="35dp"
+        app:cardBackgroundColor="@color/bg_facebook"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="7dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/btnFacebook"
+                android:textColor="@color/branco1"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/btnGoogle"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/btnFacebook"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/bg_google"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="7dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/btnGoogle"
+                android:textColor="@color/branco1"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:id="@+id/txtLinhaEsq"
+        android:layout_width="90dp"
+        android:layout_height="1dp"
+        android:layout_alignEnd="@id/txtOu"
+        android:layout_alignRight="@id/txtOu"
+        android:layout_alignTop="@id/txtOu"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/fonteLetra"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/txtOu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnGoogle"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/ou"
+        android:textColorHint="@color/fonteLetra" />
+
+    <View
+        android:id="@+id/txtLinhaDir"
+        android:layout_width="90dp"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@id/txtOu"
+        android:layout_alignStart="@id/txtOu"
+        android:layout_alignTop="@id/txtOu"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/fonteLetra"
+        android:focusable="false" />
+
+    <EditText
+        android:id="@+id/editEmailLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/txtOu"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/login_email"
+        android:drawableStart="@drawable/login_email"
+        android:ems="14"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textSize="@dimen/fonte_hint" />
+
+    <EditText
+        android:id="@+id/editSenhaLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editEmailLogin"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-7dp"
+        android:drawableLeft="@drawable/login_senha"
+        android:drawableStart="@drawable/login_senha"
+        android:ems="14"
+        android:hint="@string/senha"
+        android:inputType="textPassword"
+        android:textSize="@dimen/fonte_hint" />
+
+    <Switch
+        android:id="@+id/switchGravar"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editSenhaLogin"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-7dp"
+        android:checked="false"
+        android:paddingEnd="@dimen/espacamento"
+        android:paddingLeft="@dimen/espacamento"
+        android:paddingStart="@dimen/espacamento"
+        android:switchTextAppearance="@android:style/TextAppearance"
+        android:text="@string/lembrar_de_mim"
+        android:textColor="@color/fonteLetra"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/switchGravar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/botao_pricipal"
+        android:text="@string/btnEntrar"
+        android:textColor="@color/branco1" />
+
+    <Button
+        android:id="@+id/btnInscrever"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/btnEntrar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="70dp"
+        android:background="@android:color/transparent"
+        android:text="@string/btnInscrever"
+        android:textColor="@color/cinza2"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btnRedefinir"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/btnInscrever"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:text="@string/btnRedefinir"
+        android:textColor="@color/cinza2"
+        android:textSize="12sp" />
+</RelativeLayout>

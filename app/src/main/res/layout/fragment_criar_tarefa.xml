@@ -1,0 +1,90 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_criar_tarefa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/branco1"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".fragments.CriarTarefaFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editNomeListaTarefa"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/conta_botao_cancelar"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:hint="@string/adicione_tarefa"
+            android:inputType="textCapWords"
+            android:textSize="@dimen/fonte_hint" />
+
+        <Button
+            android:id="@+id/btnAddItens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editNomeListaTarefa"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/conta_botao_cancelar"
+            android:text="@string/add_itens"
+            android:textColor="@color/rosa" />
+
+        <RelativeLayout
+            android:id="@+id/relAddItem"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/btnAddItens"
+            android:layout_marginTop="20dp"
+            android:paddingEnd="@dimen/espacamento"
+            android:paddingLeft="@dimen/espacamento"
+            android:paddingRight="@dimen/espacamento"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/editItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@id/btnAdd"
+                android:layout_toStartOf="@id/btnAdd"
+                android:gravity="fill"
+                android:hint="@string/adicione_um_item"
+                android:inputType="textCapWords"
+                android:textSize="@dimen/fonte_hint" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/conta_botao_cancelar"
+                android:text="@string/add"
+                android:textColor="@color/rosa" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lista_criar_tarefa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="130dp" />
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/fab_salvar" />
+</android.support.design.widget.CoordinatorLayout>

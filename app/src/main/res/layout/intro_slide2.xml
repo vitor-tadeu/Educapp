@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/branco1">
+
+    <ImageView
+        android:id="@+id/imagem_1"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/imgLogo"
+        android:src="@drawable/img_intro1" />
+
+    <ImageView
+        android:id="@+id/imagem_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imagem_1"
+        android:layout_marginLeft="140dp"
+        android:layout_marginStart="140dp"
+        android:contentDescription="@string/imgLogo"
+        android:src="@drawable/intro_seta_esquerda" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagem_1"
+        android:layout_marginLeft="30sp"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="8dp"
+        android:text="Adicione tarefa"
+        android:textAlignment="center"
+        android:textColor="@color/preto"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagem_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Organize-se"
+        android:textColor="@color/preto"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="Organize seus eventos, adicione uma lista de tarefas para esse evento."
+        android:textAlignment="center"
+        android:textColor="@color/preto"
+        android:textSize="16sp" />
+</RelativeLayout>

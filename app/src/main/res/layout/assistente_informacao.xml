@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/assistente_informacao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_assistente"
+    tools:context=".view.menu.AssistenteInformacao">
+
+    <Button
+        android:id="@+id/btnFechar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="@dimen/espacamento"
+        android:background="@drawable/assistene_fechar" />
+
+    <TextView
+        android:id="@+id/txt_1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnFechar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:text="Coisas que você pode me pedir:"
+        android:textColor="@color/branco1"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@id/txt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/btnFechar"
+        android:layout_alignStart="@id/btnFechar"
+        android:layout_below="@id/txt_1"
+        android:layout_marginTop="20dp"
+        android:text="Evento"
+        android:textColor="@color/branco1"
+        android:textSize="@dimen/fonte_texto"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@id/txt_2"
+        android:layout_alignStart="@id/txt_2"
+        android:layout_below="@id/txt_2"
+        android:layout_marginEnd="@dimen/espacamento"
+        android:layout_marginRight="@dimen/espacamento"
+        android:background="@color/branco1" />
+
+    <TextView
+        android:id="@id/txt_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txt_1"
+        android:layout_alignStart="@id/txt_1"
+        android:layout_below="@id/txt_2"
+        android:layout_marginTop="10dp"
+        android:text="Criar evento"
+        android:textColor="@color/branco1"
+        android:textSize="@dimen/fonte_texto" />
+
+    <TextView
+        android:id="@id/txt_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txt_1"
+        android:layout_alignStart="@id/txt_1"
+        android:layout_below="@id/txt_3"
+        android:layout_marginTop="10dp"
+        android:text="Editar evento"
+        android:textColor="@color/branco1"
+        android:textSize="@dimen/fonte_texto" />
+
+    <TextView
+        android:id="@+id/txt_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txt_1"
+        android:layout_alignStart="@id/txt_1"
+        android:layout_below="@id/txt_4"
+        android:layout_marginTop="10dp"
+        android:text="Apagar evento"
+        android:textColor="@color/branco1"
+        android:textSize="@dimen/fonte_texto" />
+
+    <TextView
+        android:id="@+id/txt_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/btnFechar"
+        android:layout_alignStart="@id/btnFechar"
+        android:layout_below="@id/txt_5"
+        android:layout_marginTop="20dp"
+        android:text="Tarefa"
+        android:textColor="@color/branco1"
+        android:textSize="@dimen/fonte_texto"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@id/txt_2"
+        android:layout_alignStart="@id/txt_2"
+        android:layout_below="@id/txt_6"
+        android:layout_marginEnd="@dimen/espacamento"
+        android:layout_marginRight="@dimen/espacamento"
+        android:background="@color/branco1" />
+
+    <TextView
+        android:id="@+id/txt_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txt_1"
+        android:layout_alignStart="@id/txt_1"
+        android:layout_below="@id/txt_6"
+        android:layout_marginTop="10dp"
+        android:text="Criar tarefa"
+        android:textColor="@color/branco1"
+        android:textSize="@dimen/fonte_texto" />
+
+    <TextView
+        android:id="@+id/txt_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txt_1"
+        android:layout_alignStart="@id/txt_1"
+        android:layout_below="@id/txt_7"
+        android:layout_marginTop="10dp"
+        android:text="Editar tarefa"
+        android:textColor="@color/branco1"
+        android:textSize="@dimen/fonte_texto" />
+
+    <TextView
+        android:id="@+id/txt_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txt_1"
+        android:layout_alignStart="@id/txt_1"
+        android:layout_below="@id/txt_8"
+        android:layout_marginTop="10dp"
+        android:text="Apagar tarefa"
+        android:textColor="@color/branco1"
+        android:textSize="@dimen/fonte_texto" />
+
+    <TextView
+        android:id="@+id/txt_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/btnFechar"
+        android:layout_alignStart="@id/btnFechar"
+        android:layout_below="@id/txt_9"
+        android:layout_marginTop="20dp"
+        android:text="Lembretes"
+        android:textColor="@color/branco1"
+        android:textSize="@dimen/fonte_texto"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@id/txt_2"
+        android:layout_alignStart="@id/txt_10"
+        android:layout_below="@id/txt_10"
+        android:layout_marginEnd="@dimen/espacamento"
+        android:layout_marginRight="@dimen/espacamento"
+        android:background="@color/branco1" />
+
+    <TextView
+        android:id="@+id/txt_11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txt_1"
+        android:layout_alignStart="@id/txt_1"
+        android:layout_below="@id/txt_10"
+        android:layout_marginTop="10dp"
+        android:text="Adicionar lembretes"
+        android:textColor="@color/branco1"
+        android:textSize="@dimen/fonte_texto" />
+</RelativeLayout>

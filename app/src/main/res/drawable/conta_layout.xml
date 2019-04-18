@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/branco1" />
+
+    <stroke
+        android:width="2dp"
+        android:color="@color/neve3" />
+
+    <corners android:radius="15dp" />
+
+    <gradient
+        android:angle="135"
+        android:centerColor="@color/neve1"
+        android:centerX="@android:integer/config_longAnimTime"
+        android:centerY="@android:integer/config_shortAnimTime"
+        android:endColor="@color/neve2"
+        android:startColor="@color/neve3" />
+</shape>

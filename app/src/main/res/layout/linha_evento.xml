@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_evento"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/espacamento"
+    android:background="@color/branco1"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:id="@+id/relCabecalhoEvento"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtTituloEvento"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/rosa"
+            android:gravity="center"
+            android:text="Titulo"
+            android:textColor="@color/branco1"
+            android:textSize="@dimen/fonte_texto"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/txtTituloEvento"
+            android:layout_marginEnd="@dimen/espacamento"
+            android:layout_marginStart="@dimen/espacamento">
+
+            <TextView
+                android:id="@+id/txtTipoEvento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:text="Tipo do Evento"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/fonte_hint" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/txtTipoEvento"
+                android:layout_marginTop="5dp"
+                android:background="@color/rosa" />
+
+            <TextView
+                android:id="@+id/txtDataEvento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/view"
+                android:layout_marginTop="3dp"
+                android:text="Data"
+                android:textColor="@color/preto" />
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

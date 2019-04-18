@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/conta_encerrar_conta"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/branco1"
+    tools:context=".view.minha_conta.EncerrarConta">
+
+    <ImageButton
+        android:id="@+id/imgAtencao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/imagem_atencao"
+        android:src="@drawable/conta_alerta" />
+
+    <TextView
+        android:id="@+id/txtExcluir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgAtencao"
+        android:layout_marginLeft="@dimen/espacamento"
+        android:layout_marginStart="@dimen/espacamento"
+        android:layout_marginTop="20dp"
+        android:text="@string/excluir_conta"
+        android:textColor="@color/preto"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtInformacao_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtExcluir"
+        android:layout_marginLeft="@dimen/espacamento"
+        android:layout_marginStart="@dimen/espacamento"
+        android:layout_marginTop="5dp"
+        android:text="@string/informacao_1"
+        android:textColor="@color/preto"
+        android:textSize="@dimen/fonte_texto" />
+
+    <TextView
+        android:id="@+id/txtInformacao_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtInformacao_1"
+        android:layout_marginLeft="@dimen/espacamento"
+        android:layout_marginStart="@dimen/espacamento"
+        android:text="@string/informacao_2"
+        android:textColor="@color/preto"
+        android:textSize="@dimen/fonte_texto" />
+
+    <EditText
+        android:id="@+id/editEmailEncerrarConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtInformacao_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:drawableLeft="@drawable/login_email"
+        android:drawableStart="@drawable/login_email"
+        android:ems="14"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textSize="@dimen/fonte_hint" />
+
+    <EditText
+        android:id="@+id/editSenhaEncerrarConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editEmailEncerrarConta"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-7dp"
+        android:drawableLeft="@drawable/login_senha"
+        android:drawableStart="@drawable/login_senha"
+        android:ems="14"
+        android:hint="@string/senha"
+        android:inputType="textPassword"
+        android:textSize="@dimen/fonte_hint" />
+
+    <Button
+        android:id="@+id/btnEncerrar"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/editSenhaEncerrarConta"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/botao_pricipal"
+        android:text="@string/btnEncerrarConta"
+        android:textColor="@color/branco1" />
+</RelativeLayout>

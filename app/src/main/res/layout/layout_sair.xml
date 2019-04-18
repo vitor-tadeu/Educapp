@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_sair"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    android:background="@drawable/conta_layout">
+
+    <TextView
+        android:id="@+id/txtSaindo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/saindo_da_conta"
+        android:textColor="@color/preto"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtMensagem"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSaindo"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/msgSair"
+        android:textColor="@color/cinza2"
+        android:textSize="@dimen/fonte_texto" />
+
+    <Button
+        android:id="@+id/btnSair"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMensagem"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/btnCancelar"
+        android:layout_toRightOf="@id/btnCancelar"
+        android:background="@drawable/conta_botao_sair"
+        android:text="@string/btnSair"
+        android:textColor="@color/branco1" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMensagem"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/conta_botao_cancelar"
+        android:text="@string/btnCancelar"
+        android:textColor="@color/cinza2" />
+</RelativeLayout>

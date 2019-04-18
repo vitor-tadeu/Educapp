@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_evento_confirmado"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/branco1"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".fragments.EventoConfirmadoFragment">
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:iconifiedByDefault="false"
+        android:queryHint="@string/pesquisa" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lista_evento_confirmado"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchView"
+        app:layoutManager="android.support.v7.widget.GridLayoutManager"
+        app:spanCount="2"
+        tools:listitem="@layout/linha_evento" />
+</RelativeLayout>

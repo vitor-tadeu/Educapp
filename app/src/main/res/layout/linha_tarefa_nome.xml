@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_tarefa_nome"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/branco1">
+
+    <TextView
+        android:id="@+id/txtNomeTarefaConfirmado"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="fill"
+        android:paddingEnd="@dimen/espacamento"
+        android:paddingStart="@dimen/espacamento"
+        android:text="Nome da Tarefa"
+        android:textColor="@color/preto"
+        android:textSize="@dimen/fonte_texto"
+        android:textStyle="bold" />
+</RelativeLayout>

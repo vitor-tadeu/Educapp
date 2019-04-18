@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_cadastro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/branco1"
+    tools:context=".view.login.Cadastro">
+
+    <ImageButton
+        android:id="@+id/imgVoltarCadastro"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/btnVoltar"
+        app:srcCompat="@drawable/login_voltar" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/imgLogo"
+        app:srcCompat="@drawable/img_logo" />
+
+    <TextView
+        android:id="@+id/txtEducapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogo"
+        android:layout_centerInParent="true"
+        android:text="@string/educapp"
+        android:textColor="@color/rosa"
+        android:textSize="@dimen/fonte_educapp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editNomeCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEducapp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="35dp"
+        android:digits="@string/alfabeto"
+        android:drawableLeft="@drawable/login_usuario"
+        android:drawableStart="@drawable/login_usuario"
+        android:ems="14"
+        android:hint="@string/nome"
+        android:inputType="textCapWords"
+        android:textSize="@dimen/fonte_hint" />
+
+    <EditText
+        android:id="@+id/editEmailCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editNomeCadastro"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-7dp"
+        android:drawableLeft="@drawable/login_email"
+        android:drawableStart="@drawable/login_email"
+        android:ems="14"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textSize="@dimen/fonte_hint" />
+
+    <EditText
+        android:id="@+id/editSenhaCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editEmailCadastro"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-7dp"
+        android:drawableLeft="@drawable/login_senha"
+        android:drawableStart="@drawable/login_senha"
+        android:ems="14"
+        android:hint="@string/senha"
+        android:inputType="textPassword"
+        android:textSize="@dimen/fonte_hint" />
+
+
+    <EditText
+        android:id="@+id/editConfirmarSenhaCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editSenhaCadastro"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-7dp"
+        android:drawableLeft="@drawable/login_senha"
+        android:drawableStart="@drawable/login_senha"
+        android:ems="14"
+        android:hint="@string/confirmar_senha"
+        android:inputType="textPassword"
+        android:textSize="@dimen/fonte_hint" />
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/editConfirmarSenhaCadastro"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/botao_pricipal"
+        android:text="@string/btnCadastrar"
+        android:textColor="@color/branco1" />
+</RelativeLayout>

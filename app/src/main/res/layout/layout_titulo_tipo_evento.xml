@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_titulo_tipo_evento"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtTipoEvento"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/rosa"
+        android:gravity="center"
+        android:text="@string/tipo_do_evento"
+        android:textColor="@color/branco1"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>

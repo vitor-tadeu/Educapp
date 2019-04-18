@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_tarefa_remover"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/branco1"
+    android:paddingEnd="@dimen/espacamento"
+    android:paddingLeft="@dimen/espacamento"
+    android:paddingRight="@dimen/espacamento">
+
+    <TextView
+        android:id="@+id/txtItemRemover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="fill"
+        android:paddingLeft="@dimen/espacamento"
+        android:paddingRight="@dimen/espacamento"
+        android:paddingStart="@dimen/espacamento"
+        android:text="Remover"
+        android:textColor="@color/preto"
+        android:textSize="@dimen/fonte_texto"
+        android:textStyle="bold" />
+
+    <!--android:layout_toLeftOf="@id/btnApagar"-->
+    <!--android:layout_toStartOf="@id/btnApagar"-->
+    <!--<Button-->
+    <!--android:id="@+id/btnApagar"-->
+    <!--android:layout_width="40dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:background="@drawable/tarefa_nome_remover" />-->
+</RelativeLayout>

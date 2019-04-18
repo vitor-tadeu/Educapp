@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/conta_perfil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/branco1"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".view.minha_conta.Perfil">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgUsuario"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/img_user" />
+
+    <EditText
+        android:id="@+id/editNomePerfil"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/imgUsuario"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/conta_botao"
+        android:descendantFocusability="beforeDescendants"
+        android:digits="@string/alfabeto"
+        android:ems="14"
+        android:focusableInTouchMode="true"
+        android:inputType="textCapWords"
+        android:paddingEnd="@dimen/espacamento"
+        android:paddingRight="@dimen/espacamento"
+        android:paddingStart="@dimen/espacamento"
+        android:textSize="@dimen/fonte_hint"
+        tools:ignore="LabelFor" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabAlterarFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="95dp"
+        android:layout_marginRight="95dp"
+        android:layout_marginTop="215dp"
+        app:srcCompat="@drawable/perfil_camera"
+        tools:ignore="RelativeOverlap" />
+
+    <LinearLayout
+        android:id="@+id/inflateMenuFoto"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/foto_layout"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/branco1"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="UselessParent">
+
+                <ImageButton
+                    android:id="@+id/imgFechar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="@dimen/fab_margin"
+                    android:layout_marginRight="@dimen/fab_margin"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/seta_para_remover_inflater"
+                    android:src="@drawable/perfil_seta_baixo" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/botoes"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="UselessParent">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fabGaleria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/fabCamera"
+                    android:layout_alignRight="@id/fabCamera"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="130dp"
+                    android:layout_marginRight="130dp"
+                    app:srcCompat="@drawable/perfil_galeria" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fabCamera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@drawable/perfil_camera" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fabRemoverFoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/fabCamera"
+                    android:layout_alignStart="@id/fabCamera"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginStart="130dp"
+                    app:srcCompat="@drawable/perfil_remover_foto"
+                    tools:ignore="RelativeOverlap" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/texto"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:paddingBottom="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/txtGaleria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/txtCamera"
+                    android:layout_alignRight="@id/txtCamera"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="130dp"
+                    android:layout_marginRight="130dp"
+                    android:text="@string/galeria"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/fonte_texto" />
+
+                <TextView
+                    android:id="@+id/txtCamera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/camera"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/fonte_texto" />
+
+                <TextView
+                    android:id="@+id/txtRemoverFoto"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/txtCamera"
+                    android:layout_alignStart="@id/txtCamera"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginStart="130dp"
+                    android:text="@string/remover_foto"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/fonte_texto" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

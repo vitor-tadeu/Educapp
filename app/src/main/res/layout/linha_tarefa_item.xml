@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_tarefa_item"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/branco1"
+    android:paddingEnd="5dp"
+    android:paddingLeft="5dp"
+    android:paddingStart="5dp">
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/txtItemLista"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/espacamento"
+        android:layout_marginStart="@dimen/espacamento"
+        android:layout_toEndOf="@id/checkBox"
+        android:layout_toRightOf="@id/checkBox"
+        android:gravity="fill"
+        android:text="Item"
+        android:textColor="@color/preto"
+        android:textSize="@dimen/fonte_texto"
+        android:textStyle="bold" />
+</RelativeLayout>

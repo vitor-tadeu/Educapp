@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tipo_evento">
+        <item>@string/aniversario</item>
+        <item>@string/apresentacao</item>
+        <item>@string/arrumar_a_casa</item>
+        <item>@string/balada</item>
+        <item>@string/conferencia</item>
+        <item>@string/corida</item>
+        <item>@string/curso</item>
+        <item>@string/evento</item>
+        <item>@string/fazer_compras</item>
+        <item>@string/feira_negocios</item>
+        <item>@string/festa</item>
+        <item>@string/formatura</item>
+        <item>@string/hackathon</item>
+        <item>@string/networking</item>
+        <item>@string/palestra</item>
+        <item>@string/pesquisa</item>
+        <item>@string/projeto</item>
+        <item>@string/prova</item>
+        <item>@string/seminario</item>
+        <item>@string/show</item>
+        <item>@string/trabalho</item>
+        <item>@string/viagem</item>
+        <item>@string/workshops</item>
+        <item>@string/outros</item>
+    </string-array>
+</resources>

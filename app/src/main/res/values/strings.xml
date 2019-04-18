@@ -1,0 +1,187 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    //Manifest
+    <string name="app_id">455426831584808</string>
+    <string name="app_name">Educapp</string>
+    <string name="title_editar_perfil">Perfil</string>
+    <string name="title_alterar_senha">Alterar Senha</string>
+    <string name="title_encerrar_conta">Encerrar Minha Conta</string>
+    <string name="title_notificacao">Notificações</string>
+    <string name="title_sobre">Sobre</string>
+    <string name="title_privacidade">Privacidade</string>
+    <string name="title_termo_servicoa">Termos de Serviços</string>
+    <string name="title_legal">Legal</string>
+    <string name="title_suporte">Suporte</string>
+
+    //Login xml
+    <string name="imgLogo">Imagem da logo</string>
+    <string name="educapp">EDUCAPP</string>
+    <string name="btnFacebook">ENTRAR COM O FACEBOOK</string>
+    <string name="btnGoogle">ENTRAR COM O GOOGLE</string>
+    <string name="ou">OU</string>
+    <string name="email">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="lembrar_de_mim">LEMBRAR DE MIM</string>
+    <string name="btnEntrar">ENTRAR</string>
+    <string name="btnInscrever">INSCREVER-SE</string>
+    <string name="btnRedefinir">REDEFINIR SENHA</string>
+
+    //Login java
+    <string name="msgEmail">E-mail inválido</string>
+    <string name="msgSenha">Senha incorreta</string>
+    <string name="emailSP">email</string>
+    <string name="senhaSP">senha</string>
+    <string name="lembrarSP">lebrar</string>
+
+    //Cadastro xml
+    <string name="nome">Nome</string>
+    <string name="confirmar_senha">Confirmar Senha</string>
+    <string name="btnVoltar">Botão voltar</string>
+    <string name="btnCadastrar">CADASTRAR</string>
+
+    //Cadastro java
+    <string name="msgNome">Nome obrigatório</string>
+    <string name="msgSenhaNova">Mínimo de 8 caracteres</string>
+    <string name="msgConfirmaSenha">Senha diferente</string>
+    <string name="toastCadastro">Cadastro realizado</string>
+    <string name="toastNaoCadastro">Cadastro não realizado</string>
+    <string name="toastErro">Campos obrigatório</string>
+
+    //Redefinr Senha xml
+    <string name="nova_senha">Nova Senha</string>
+    <string name="btnAlterar">ALTERAR</string>
+
+    //Redefinr Senha java
+    <string name="toastRedefinirSenha">Senha alterada</string>
+
+    //Menu
+    <string name="home">Home</string>
+    <string name="lembretes">Lembretes</string>
+    <string name="assistente">Lori</string>
+    <string name="minha_conta">Minha Conta</string>
+
+    //Calendário xml
+    <string name="ano">Ano</string>
+    <string name="mes">Mês</string>
+    <string name="dia">Dia</string>
+
+    //Evento Confirmado
+    <string name="lista_tarefa">Lista de Tarefa</string>
+    <string name="calendário">Calendário</string>
+    <string name="evento">Evento</string>
+
+    //Tarefa Confirmada
+
+    //Criar Evento xml
+    <string name="titulo">Título</string>
+    <string name="adicione_um_titulo">Adicione um título</string>
+    <string name="tipo_evento">Tipo do Evento</string>
+    <string name="selecione_evento">Selecione o Evento</string>
+    <string name="selecione_tema">Selecione o Tema</string>
+    <string name="descricao">Descrição</string>
+    <string name="data">Data</string>
+    <string name="hora">Hora</string>
+    <string name="prioridade">PRIORIDADE</string>
+    <string name="lembrete">LEMBRETE</string>
+    <string name="imagem_calendario">Imagem calendário</string>
+    <string name="imagem_relogio">Imagem relógio</string>
+    <string name="imagem_tipo_evento">Imagem tipo evento</string>
+    <string name="tipo_do_evento">Tipo do Evento</string>
+
+    //Criar Evento java
+    <string name="nome_titulo">Insira um título</string>
+    <string name="msg_tipo_evento">Selecione o tipo do evento</string>
+    <string name="msg_data">Escolha uma data</string>
+
+    //Lista de Tarefa xml
+    <string name="adicione_tarefa">Nome da lista de tarefa</string>
+    <string name="adicione_um_item">Adicione um item</string>
+    <string name="btnOk">OK</string>
+    <string name="add_itens">Add Itens</string>
+    <string name="imagem_editar">Imagem editar</string>
+    <string name="add">Add</string>
+
+    //Lista de Tarefa java
+    <string name="msgItem">Insira um Item</string>
+    <string name="msgTitulo">Informe o nome da lista</string>
+    <string name="item_adicionado">Item Adicionado</string>
+    <string name="item_removido">Item Removido</string>
+    <string name="lista_criada">Lista Criada</string>
+
+    //Assistente
+    <string name="imagem_do_microfone">Imagem do microfone</string>
+    <string name="toque_para_falar">Toque para falar</string>
+
+    //Assistente java
+    <string name="fala_1">Em que posso te ajudar?</string>
+    <string name="opcoes_titulo">Opções para o título</string>
+    <string name="sem_suporte" tools:ignore="Typos">Seu celular não suporta comando de voz</string>
+
+    //Minha Conta
+    <string name="btnSair">Sair</string>
+    <string name="imagem_do_usuario">Imagem do Usuário</string>
+    <string name="conta">Conta</string>
+    <string name="perfil">Perfil</string>
+    <string name="alterar_senha">Alterar Senha</string>
+    <string name="encerrar_conta">Encerrar Conta</string>
+    <string name="configuracao">Configurações</string>
+    <string name="notificacoes">Notificações</string>
+    <string name="sobre">Sobre</string>
+
+    //Dialog Sair
+    <string name="saindo_da_conta">Saindo da conta</string>
+    <string name="btnCancelar">Cancelar</string>
+    <string name="msgSair">Você está prestes a sair da conta. Os seus dados serão salvos.</string>
+
+    //Perfil
+    <string name="galeria">Galeria</string>
+    <string name="camera">Câmera</string>
+    <string name="remover_foto">Remover</string>
+    <string name="seta_para_remover_inflater">Seta para remover inflater</string>
+
+    //Alterar Senha
+
+    //Encerrar Conta xml
+    <string name="imagem_atencao">Imagem de Atenção</string>
+    <string name="excluir_conta">Excluir sua conta irá:</string>
+    <string name="informacao_1">* Apagar suas informações de conta e foto de perfil.</string>
+    <string name="informacao_2">* Apagar todos os eventos agendados.</string>
+    <string name="btnEncerrarConta">Encerrar Conta</string>
+    <string name="msgEncerrarConta">Conta Encerrada</string>
+
+    //Notificação
+
+    /Sobre
+    <string name="privacidade">Privacidade</string>
+    <string name="termo_de_servico">Termos de Serviços</string>
+    <string name="legal">Legal</string>
+    <string name="suporte">Suporte</string>
+
+    //Arrays Tipo Evento
+    <string name="apresentacao">Apresentação</string>
+    <string name="palestra">Palestra</string>
+    <string name="pesquisa">Pesquisa</string>
+    <string name="projeto">Projeto</string>
+    <string name="prova">Prova</string>
+    <string name="aniversario">Aniversário</string>
+    <string name="arrumar_a_casa">Arrumar a Casa</string>
+    <string name="fazer_compras">Fazer Compras</string>
+    <string name="viagem">Viagem</string>
+    <string name="trabalho">Trabalho</string>
+    <string name="outros">Outros</string>
+    <string name="seminario">Seminário</string>
+    <string name="workshops">Workshops</string>
+    <string name="feira_negocios">Feiras de Negócios</string>
+    <string name="curso">Curso</string>
+    <string name="conferencia">Conferência</string>
+    <string name="balada">Balada</string>
+    <string name="corida">Corrida</string>
+    <string name="festa">Festa</string>
+    <string name="formatura">Formatura</string>
+    <string name="hackathon">Hackathon</string>
+    <string name="networking">Networking</string>
+    <string name="show">Show</string>
+    <string name="tarefa">Tarefa</string>
+    <string name="adidcionar_tarefa">Adidcionar Tarefa</string>
+    <string name="title_tarefa_item">Tarefas</string>
+    <string name="alfabeto">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZáéíóúàèìòùâêô</string>
+</resources>

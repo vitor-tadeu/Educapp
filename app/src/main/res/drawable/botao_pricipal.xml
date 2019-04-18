@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/rosa" />
+
+    <stroke
+        android:width="1dp"
+        android:color="@color/colorAccent" />
+
+    <corners android:radius="10dp" />
+
+    <gradient
+        android:angle="135"
+        android:centerColor="@color/colorPrimary"
+        android:centerX="@android:integer/config_longAnimTime"
+        android:centerY="@android:integer/config_longAnimTime"
+        android:endColor="@color/colorPrimaryDark"
+        android:startColor="@color/colorAccent" />
+</shape>

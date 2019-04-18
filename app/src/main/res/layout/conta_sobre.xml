@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/conta_sobre"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/branco1"
+    tools:context=".view.minha_conta.Sobre">
+
+    <Button
+        android:id="@+id/btnPrivacidade"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/conta_botao"
+        android:drawableEnd="@drawable/seta_proximo"
+        android:drawableRight="@drawable/seta_proximo"
+        android:gravity="fill"
+        android:paddingLeft="@dimen/espacamento"
+        android:paddingRight="@dimen/espacamento"
+        android:paddingStart="@dimen/espacamento"
+        android:text="@string/privacidade"
+        android:textAllCaps="false"
+        android:textSize="@dimen/fonte_menu" />
+
+    <Button
+        android:id="@+id/btnTermoServico"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/btnPrivacidade"
+        android:background="@drawable/conta_botao"
+        android:drawableEnd="@drawable/seta_proximo"
+        android:drawableRight="@drawable/seta_proximo"
+        android:gravity="fill"
+        android:paddingLeft="@dimen/espacamento"
+        android:paddingRight="@dimen/espacamento"
+        android:paddingStart="@dimen/espacamento"
+        android:text="@string/termo_de_servico"
+        android:textAllCaps="false"
+        android:textSize="@dimen/fonte_menu" />
+
+    <Button
+        android:id="@+id/btnLegal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/btnTermoServico"
+        android:background="@drawable/conta_botao"
+        android:drawableEnd="@drawable/seta_proximo"
+        android:drawableRight="@drawable/seta_proximo"
+        android:gravity="fill"
+        android:paddingLeft="@dimen/espacamento"
+        android:paddingRight="@dimen/espacamento"
+        android:paddingStart="@dimen/espacamento"
+        android:text="@string/legal"
+        android:textAllCaps="false"
+        android:textSize="@dimen/fonte_menu" />
+
+    <Button
+        android:id="@+id/btnSuporte"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/btnLegal"
+        android:background="@drawable/conta_botao"
+        android:drawableEnd="@drawable/seta_proximo"
+        android:drawableRight="@drawable/seta_proximo"
+        android:gravity="fill"
+        android:paddingLeft="@dimen/espacamento"
+        android:paddingRight="@dimen/espacamento"
+        android:paddingStart="@dimen/espacamento"
+        android:text="@string/suporte"
+        android:textAllCaps="false"
+        android:textSize="@dimen/fonte_menu" />
+</RelativeLayout>

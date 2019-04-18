@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/conta_alterar_senha"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/branco1"
+    tools:context=".view.minha_conta.AlterarSenha">
+
+    <EditText
+        android:id="@+id/editEmailAlterarSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:drawableLeft="@drawable/login_email"
+        android:drawableStart="@drawable/login_email"
+        android:ems="14"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textSize="@dimen/fonte_hint" />
+
+    <EditText
+        android:id="@+id/editSenhaAlterarSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editEmailAlterarSenha"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-7dp"
+        android:drawableLeft="@drawable/login_senha"
+        android:drawableStart="@drawable/login_senha"
+        android:ems="14"
+        android:hint="@string/senha"
+        android:inputType="textPassword"
+        android:textSize="@dimen/fonte_hint" />
+
+    <EditText
+        android:id="@+id/editConfirmarSenhaAlterarSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editSenhaAlterarSenha"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-7dp"
+        android:drawableLeft="@drawable/login_senha"
+        android:drawableStart="@drawable/login_senha"
+        android:ems="14"
+        android:hint="@string/nova_senha"
+        android:inputType="textPassword"
+        android:textSize="@dimen/fonte_hint" />
+
+    <Button
+        android:id="@+id/btnAlterarAlterarSenha"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/editConfirmarSenhaAlterarSenha"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/botao_pricipal"
+        android:text="@string/btnAlterar"
+        android:textColor="@color/branco1" />
+</RelativeLayout>

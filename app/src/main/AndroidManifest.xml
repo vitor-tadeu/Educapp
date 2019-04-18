@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.educapp">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".view.introducao.TelaInicial"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppCompat.TelaCheia"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.introducao.IntroViewPager"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppCompat.TelaCheia"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- Login -->
+        <activity
+            android:name=".view.login.Login"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".view.login.Cadastro"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".view.login.RedefinirSenha"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!--Home-->
+        <activity
+            android:name=".view.lembretes.TarefaItem"
+            android:label="@string/title_tarefa_item"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".view.lembretes.EditarEvento"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".view.lembretes.AddTarefa"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".view.lembretes.AddTarefaConfirmado"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!-- Menu -->
+        <activity
+            android:name=".view.menu.Home"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".view.menu.Lembretes"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".view.menu.Assistente"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".view.menu.AssistenteInformacao"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".view.menu.MinhaConta"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <!-- Minha Conta -->
+        <activity
+            android:name=".view.minha_conta.Perfil"
+            android:label="@string/title_editar_perfil"
+            android:parentActivityName=".view.menu.MinhaConta"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".view.minha_conta.AlterarSenha"
+            android:label="@string/title_alterar_senha"
+            android:parentActivityName=".view.menu.MinhaConta"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".view.minha_conta.EncerrarConta"
+            android:label="@string/title_encerrar_conta"
+            android:parentActivityName=".view.menu.MinhaConta"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".view.minha_conta.Notificacao"
+            android:label="@string/title_notificacao"
+            android:parentActivityName=".view.menu.MinhaConta"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".view.minha_conta.Sobre"
+            android:label="@string/title_sobre"
+            android:parentActivityName=".view.menu.MinhaConta"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!-- Sobre -->
+        <activity
+            android:name=".view.minha_conta.sobre.Privacidade"
+            android:label="@string/title_privacidade"
+            android:parentActivityName=".view.minha_conta.Sobre"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".view.minha_conta.sobre.TermoServico"
+            android:label="@string/title_termo_servicoa"
+            android:parentActivityName=".view.minha_conta.Sobre"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".view.minha_conta.sobre.Legal"
+            android:label="@string/title_legal"
+            android:parentActivityName=".view.minha_conta.Sobre"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".view.minha_conta.sobre.Suporte"
+            android:label="@string/title_suporte"
+            android:parentActivityName=".view.minha_conta.Sobre"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!--Facebook-->
+        <activity android:name="com.facebook.LoginActivity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+    </application>
+
+</manifest>

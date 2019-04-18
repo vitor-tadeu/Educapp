@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_minha_conta"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/conta_botao"
+    tools:context=".view.menu.MinhaConta">
+
+    <!--Layout tela cheia-->
+    <RelativeLayout
+        android:id="@+id/relLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <!--Layout cabeçalho-->
+        <RelativeLayout
+            android:id="@+id/relCabecalho"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@drawable/nav_background_cabecalho"
+            android:paddingBottom="@dimen/margin_menu_vertical"
+            android:paddingLeft="@dimen/margin_menu_horizontal"
+            android:paddingRight="@dimen/margin_menu_horizontal"
+            android:paddingTop="@dimen/margin_menu_vertical"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgUsuario"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/img_user" />
+
+            <TextView
+                android:id="@+id/txtNomeUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgUsuario"
+                android:text="Educapp"
+                android:textColor="@color/branco1" />
+
+            <TextView
+                android:id="@+id/txtEmailUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtNomeUsuario"
+                android:text="educapp@educapp.com" />
+
+            <Button
+                android:id="@+id/btnDesconectar"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="-10dp"
+                android:layout_marginRight="-10dp"
+                android:layout_marginTop="-10dp"
+                android:background="@android:color/transparent"
+                android:text="@string/btnSair"
+                android:textAllCaps="false"
+                android:textSize="@dimen/fonte_texto" />
+        </RelativeLayout>
+
+        <!--Layout Central-->
+        <RelativeLayout
+            android:id="@+id/relCentral"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/relMenuInferior"
+            android:layout_below="@+id/relCabecalho">
+
+            <TextView
+                android:id="@+id/txtConta"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/conta_botao"
+                android:gravity="fill"
+                android:paddingEnd="@dimen/espacamento"
+                android:paddingLeft="@dimen/espacamento"
+                android:paddingStart="@dimen/espacamento"
+                android:text="@string/conta"
+                android:textColor="@color/cinza1"
+                android:textSize="@dimen/fonte_criar_evento"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/txtConta"
+                android:background="@drawable/conta_botao"
+                android:drawableEnd="@drawable/seta_proximo"
+                android:drawableRight="@drawable/seta_proximo"
+                android:gravity="fill_vertical"
+                android:paddingEnd="@dimen/espacamento"
+                android:paddingLeft="@dimen/espacamento_conta"
+                android:paddingRight="@dimen/espacamento"
+                android:paddingStart="@dimen/espacamento_conta"
+                android:text="@string/perfil"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnAlterarSenha"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/btnPerfil"
+                android:background="@drawable/conta_botao"
+                android:drawableEnd="@drawable/seta_proximo"
+                android:drawableRight="@drawable/seta_proximo"
+                android:gravity="fill_vertical"
+                android:paddingEnd="@dimen/espacamento"
+                android:paddingLeft="@dimen/espacamento_conta"
+                android:paddingRight="@dimen/espacamento"
+                android:paddingStart="@dimen/espacamento_conta"
+                android:text="@string/alterar_senha"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnEncerrarConta"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/btnAlterarSenha"
+                android:background="@drawable/conta_botao"
+                android:drawableEnd="@drawable/seta_proximo"
+                android:drawableRight="@drawable/seta_proximo"
+                android:gravity="fill_vertical"
+                android:paddingEnd="@dimen/espacamento"
+                android:paddingLeft="@dimen/espacamento_conta"
+                android:paddingRight="@dimen/espacamento"
+                android:paddingStart="@dimen/espacamento_conta"
+                android:text="@string/encerrar_conta"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:id="@+id/txtConfiguracao"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/btnEncerrarConta"
+                android:background="@drawable/conta_botao"
+                android:gravity="fill"
+                android:paddingEnd="@dimen/espacamento"
+                android:paddingLeft="@dimen/espacamento"
+                android:paddingStart="@dimen/espacamento"
+                android:text="@string/configuracao"
+                android:textColor="@color/cinza1"
+                android:textSize="@dimen/fonte_criar_evento"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnNotificacao"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txtConfiguracao"
+                android:background="@drawable/conta_botao"
+                android:drawableEnd="@drawable/seta_proximo"
+                android:drawableRight="@drawable/seta_proximo"
+                android:gravity="fill"
+                android:paddingEnd="@dimen/espacamento"
+                android:paddingLeft="@dimen/espacamento_conta"
+                android:paddingRight="@dimen/espacamento"
+                android:paddingStart="@dimen/espacamento_conta"
+                android:text="@string/notificacoes"
+                android:textAllCaps="false"
+                android:textSize="@dimen/fonte_menu" />
+
+            <Button
+                android:id="@+id/btnSobre"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/conta_botao"
+                android:drawableEnd="@drawable/seta_proximo"
+                android:drawableRight="@drawable/seta_proximo"
+                android:gravity="fill_vertical"
+                android:paddingEnd="@dimen/espacamento"
+                android:paddingLeft="@dimen/espacamento_conta"
+                android:paddingRight="@dimen/espacamento"
+                android:paddingStart="@dimen/espacamento_conta"
+                android:text="@string/sobre"
+                android:textAllCaps="false"
+                android:textSize="@dimen/fonte_menu" />
+        </RelativeLayout>
+
+        <!--Menu Inferior-->
+        <RelativeLayout
+            android:id="@+id/relMenuInferior"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true">
+
+            <android.support.design.widget.BottomNavigationView
+                android:id="@+id/nav_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemBackground="@drawable/conta_botao"
+                app:menu="@menu/navigation" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

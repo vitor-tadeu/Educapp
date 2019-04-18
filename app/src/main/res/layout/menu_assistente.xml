@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_assistente"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_assistente"
+    tools:context=".view.menu.Assistente">
+
+    <TextView
+        android:id="@+id/txtMsgEntrada"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="end"
+        android:maxLines="4"
+        android:text=""
+        android:textColor="@color/branco1"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/txtMsgUsuario"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtMsgEntrada"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="start"
+        android:maxLines="4"
+        android:text=""
+        android:textColor="@color/branco1"
+        android:textSize="26sp" />
+
+    <ImageButton
+        android:id="@+id/btnMicrofone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtMsgMicro"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/assistente_micro_efeito"
+        android:contentDescription="@string/imagem_do_microfone"
+        android:src="@drawable/assistene_microfone" />
+
+    <TextView
+        android:id="@+id/txtMsgMicro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="75dp"
+        android:text="@string/toque_para_falar"
+        android:textColor="@color/branco1"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnInformacao"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/btnMicrofone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/assistente_informacao" />
+
+    <!--Menu Inferior-->
+    <RelativeLayout
+        android:id="@+id/relMenuInferior"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemBackground="@drawable/conta_botao"
+            app:menu="@menu/navigation" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/menu_home"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/nav_criar_evento"
+        android:icon="@drawable/menu_criar_evento"
+        android:title="@string/lembretes" />
+    <item
+        android:id="@+id/nav_assistente"
+        android:icon="@drawable/menu_microfone"
+        android:title="@string/assistente" />
+    <item
+        android:id="@+id/nav_minha_conta"
+        android:icon="@drawable/menu_conta"
+        android:title="@string/minha_conta" />
+</menu>

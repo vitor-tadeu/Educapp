@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/branco1">
+
+    <ImageView
+        android:id="@+id/imagem_1"
+        android:layout_width="280dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/imgLogo"
+        android:src="@drawable/img_intro2" />
+
+    <ImageView
+        android:id="@+id/imagem_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="163dp"
+        android:layout_toEndOf="@+id/imagem_1"
+        android:layout_toRightOf="@+id/imagem_1"
+        android:contentDescription="@string/imgLogo"
+        android:rotation="270"
+        android:src="@drawable/intro_seta_esquerda" />
+
+    <TextView
+        android:id="@+id/txt_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagem_2"
+        android:layout_toEndOf="@+id/imagem_1"
+        android:layout_toRightOf="@+id/imagem_1"
+        android:text="Segure e"
+        android:gravity="center"
+        android:textColor="@color/preto"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_0"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/imagem_1"
+        android:layout_toRightOf="@+id/imagem_1"
+        android:text="Arraste"
+        android:textColor="@color/preto"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_1"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_toEndOf="@+id/imagem_1"
+        android:layout_toRightOf="@+id/imagem_1"
+        android:text="para"
+        android:textColor="@color/preto"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txt_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/imagem_1"
+        android:layout_toRightOf="@+id/imagem_1"
+        android:text="excluir"
+        android:textColor="@color/preto"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txt_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagem_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Não esqueça de nada"
+        android:textColor="@color/preto"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:text="Abra a tarefa para adicionar, remover, concluir."
+        android:textAlignment="center"
+        android:textColor="@color/preto"
+        android:textSize="16sp" />
+</RelativeLayout>
